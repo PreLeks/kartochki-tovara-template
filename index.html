@@ -10,46 +10,54 @@
 
 <body>
 
-  <section class="cards">
-    <div class="cards__content">
-        <article class="cards__item">
-          <div class="cards__description">
-            <img src="img/NovaX.png" alt="Nova X" class="cards__image">
-            <h3 class="cards__title">Nova X</h3>
-            <p class="cards__subtitle">OLED-дисплей и двойная камера</p>
-          </div>
-          <div class="cards__price">
-            <span class="cards__price-value">49 990 ₽</span>
-            <button type="button" class="cards__button">Купить</button>
-          </div>
-        </article>
-
-        <article class="cards__item">
-          <div class="cards__description">
-            <img src="img/SonicPro.png" alt="Sonic Pro" class="cards__image">
-            <h3 class="cards__title">Sonic Pro</h3>
-            <p class="cards__subtitle">Полноразмерные беспроводные наушники с активным шумоподавлением, поддержкой
-              быстрой зарядки и автономностью до 40 часов</p>
-          </div>
-          <div class="cards__price">
-            <span class="cards__price-value">12 490 ₽</span>
-            <button type="button" class="cards__button">Купить</button>
-          </div>
-        </article>
-
-        <article class="cards__item">
-          <div class="cards__description">
-            <img src="img/PulseWatch.png" alt="Pulse Watch" class="cards__image">
-            <h3 class="cards__title">Pulse Watch</h3>
-            <p class="cards__subtitle">Умные часы для спорта и отслеживания активности</p>
-          </div>
-          <div class="cards__price">
-            <span class="cards__price-value">18 990 ₽</span>
-            <button type="button" class="cards__button">Купить</button>
-          </div>
-        </article>
-    </div>
-  </section>
+  <ul class="products">
+    <li class="products__item">
+      <article class="product">
+        <img src="img/NovaX.png" alt="Nova X" class="product__pic">
+        <h3 class="product__title">
+          <a href="#" target="_blank" class="product__link">
+            Nova X
+          </a>
+        </h3>
+        <p class="product__descr">OLED-дисплей и двойная камера</p>
+        <div class="product__bottom">
+          <div class="product__price">49 990 ₽</div>
+          <button type="button" class="product__btn">Купить</button>
+        </div>
+      </article>
+    </li>
+    <li class="products__item">
+      <article class="product">
+        <img src="img/SonicPro.png" alt="Sonic Pro" class="product__pic">
+        <h3 class="product__title">
+          <a href="#" target="_blank" class="product__link">
+            Sonic Pro
+          </a>
+        </h3>
+        <p class="product__descr">Полноразмерные беспроводные наушники с активным шумоподавлением, поддержкой
+          быстрой зарядки и автономностью до 40 часов</p>
+        <div class="product__bottom">
+          <div class="product__price">12 490 ₽</div>
+          <button type="button" class="product__btn">Купить</button>
+        </div>
+      </article>
+    </li>
+    <li class="products__item">
+      <article class="product">
+        <img src="img/PulseWatch.png" alt="Pulse Watch" class="product__pic">
+        <h3 class="product__title">
+          <a href="#" target="_blank" class="product__link">
+            Pulse Watch
+          </a>
+        </h3>
+        <p class="product__descr">Умные часы для спорта и отслеживания активности</p>
+        <div class="product__bottom">
+          <div class="product__price">18 990 ₽</div>
+          <button type="button" class="product__btn">Купить</button>
+        </div>
+      </article>
+    </li>
+  </ul>
 
 </body>
 

@@ -35,46 +35,59 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.cards {
+.products {
   max-width: 980px;
   margin: 0 auto;
-  color: #FFF;
-}
-
-.cards__content {
   padding: 20px;
+  list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   background: #282828;
 }
 
-.cards__item {
+.products__item {
+  max-width: 300px;
+  min-width: 250px;
+  flex: 1;
+}
+
+.product {
+  position: relative;
   min-height: 420px;
   padding: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 1 1 300px;
   border-radius: 24px;
   background: #111827;
 }
 
-.cards__image {
+.product__pic {
+  max-width: 100%;
   display: block;
-  width: 268px;
-  height: 170px;
   border-radius: 16px;
-  object-fit: cover;
 }
 
-.cards__title {
+.product__title {
   margin: 0;
   padding-top: 12px;
   font-weight: 700;
   font-size: 20px;
+  color: #FFF;
 }
 
-.cards__subtitle {
+.product__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.product__descr {
   margin: 0;
   padding-top: 8px;
   font-weight: 400;
@@ -83,23 +96,38 @@ body {
   color: #94A3B8;
 }
 
-.cards__price {
+.product__bottom {
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
-.cards__price-value {
+.product__price {
   font-weight: 700;
   font-size: 18px;
+  color: #FFF;
 }
 
-.cards__button {
+.product__btn {
+  position: relative;
+  z-index: 2;
   padding: 10px 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
+  color: #FFF;
   background: #3B82F6;
   border-radius: 12px;
   border: none;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product__btn:hover {
+  background: #8AB0EE;
 }
