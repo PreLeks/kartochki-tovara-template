@@ -42,9 +42,7 @@ body {
 }
 
 .cards__content {
-  margin: 0;
   padding: 20px;
-  list-style: none;
   display: flex;
   gap: 20px;
   background: #282828;
